@@ -32,6 +32,13 @@ ol {
   margin: 0;
 }
 
+/* Remove text decoraiton on a element */
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 /* Set core root defaults */
 html:focus-within {
   scroll-behavior: smooth;
