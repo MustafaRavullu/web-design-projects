@@ -1,0 +1,109 @@
+:root {
+  --ableton-blue: #0000ff;
+  --ableton-bg: #f3f3f3;
+  --ableton-purple: #d5b3ff;
+  --ableton-red: #ff764d;
+  --ableton-green: #b6ffc0;
+  --ableton-ligth-blue: #b1c5ff;
+  --ableton-yellow: #fbffa7;
+}
+
+body {
+  background-color: var(--ableton-bg);
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  font-family: futura-pt, Avenir, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.layout {
+  background-color: #ffffff;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+main {
+  flex: 1;
+}
+
+.header {
+  display: flex;
+  gap: 40px;
+  padding: 20px 40px;
+}
+
+.header__nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.header__nav-list {
+  display: flex;
+  gap: 2.8rem;
+  width: 100%;
+}
+
+.header__nav-item {
+  line-height: 1.5rem;
+  font-size: 1.1rem;
+}
+
+.header__nav-link__auth {
+  font-size: 0.9rem;
+  font-weight: bolder;
+}
+
+.header__nav-item:nth-last-child(2) {
+  margin-left: auto;
+  font-weight: 500;
+}
+
+.header__nav-item:not(:nth-last-child(-n + 2)) {
+  font-weight: 500;
+  letter-spacing: -0.025em;
+}
+
+.header__logo-image {
+  width: 60px;
+  height: 28px;
+}
+
+.header__nav-link__promo {
+  color: var(--ableton-blue);
+}
+
+.header__nav-button {
+  color: var(--ableton-red);
+  display: flex;
+  align-items: center;
+}
+
+.header__nav-button__icon {
+  margin-left: 2px;
+  font-size: 1rem;
+  fill: var(--ableton-red);
+}
+
+@media screen and (max-width: 1280px) {
+  .header__nav-item {
+    font-size: 0.875rem;
+  }
+
+  .header__nav-link__promo,
+  .header__nav-link__auth {
+    font-size: 0.8rem;
+  }
+
+  .header {
+    padding: 20px 20px;
+    gap: 20px;
+  }
+
+  .header__nav-list {
+    gap: 1.3rem;
+  }
+}
