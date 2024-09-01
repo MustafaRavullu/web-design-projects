@@ -119,6 +119,12 @@ main {
   color: #ff4911;
 }
 
+.anton-regular {
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 @media screen and (max-width: 764px) {
   ul {
     grid-template-columns: 1fr;
