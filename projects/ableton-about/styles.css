@@ -88,6 +88,64 @@ main {
   fill: var(--ableton-red);
 }
 
+.secondary-header__nav-list {
+  display: flex;
+  gap: 20px;
+  padding: 20px 40px;
+  font-size: 0.875rem;
+  font-weight: bold;
+}
+
+.secondary-header__nav-item:first-child {
+  color: var(--ableton-red);
+}
+
+.hero {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-image: url("http://127.0.0.1:5500/projects/ableton-about/assets/header.jpg");
+  min-height: calc(100vh - 120px);
+  margin-left: 8.33333vw;
+  margin-right: 8.33333vw;
+  margin-bottom: 8.33333vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero__wordmark {
+  height: 104px;
+  width: 430px;
+}
+
+.company_presentation__emphasis-word {
+  color: var(--ableton-blue);
+}
+
+.company__presentation {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50vw;
+  margin-bottom: 8vw;
+}
+
+.company__presentation p {
+  font-size: 1.1rem;
+}
+
+@media screen and (max-width: 1124px) {
+  .company__presentation,
+  .company__presentation p {
+    width: 80vw;
+    font-size: 0.875rem;
+  }
+}
+
 @media screen and (max-width: 1280px) {
   .header__nav-item {
     font-size: 0.875rem;
@@ -105,5 +163,17 @@ main {
 
   .header__nav-list {
     gap: 1.3rem;
+  }
+
+  .secondary-header__nav-list {
+    font-size: 0.8rem;
+    padding: 20px 20px;
+  }
+}
+
+@media screen and (max-width: 776px) {
+  .hero__wordmark {
+    height: 80px;
+    width: 240px;
   }
 }
