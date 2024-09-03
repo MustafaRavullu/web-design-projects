@@ -138,6 +138,48 @@ main {
   font-size: 1.1rem;
 }
 
+.section-three {
+  position: relative;
+  padding-top: 8.33333vw;
+  padding-bottom: 8.33333vw;
+  display: flex;
+  align-items: center;
+  margin-bottom: 8.33333vw;
+}
+
+.section-three__img1 {
+  background-image: url("http://127.0.0.1:5500/projects/ableton-about/assets/secondsectionimg1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  width: 41.66667vw;
+  height: 41.66667vw;
+  margin-left: 8.33333vw;
+  z-index: 1;
+  position: relative;
+}
+
+.section-three__img2 {
+  background-image: url("http://127.0.0.1:5500/projects/ableton-about/assets/secondsectionimg2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  width: 33.33333vw;
+  height: 25vw;
+  margin-left: 8.33333vw;
+  z-index: 1;
+  position: relative;
+}
+
+.yellow-bg {
+  background-color: var(--ableton-yellow);
+  position: absolute;
+  width: 58.33333vw;
+  height: 58.33333vw;
+  right: 0;
+  z-index: 0;
+}
+
 @media screen and (max-width: 1124px) {
   .company__presentation,
   .company__presentation p {
