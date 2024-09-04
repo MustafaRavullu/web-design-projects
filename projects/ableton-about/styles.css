@@ -104,7 +104,7 @@ main {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
-  background-image: url("http://127.0.0.1:5500/projects/ableton-about/assets/header.jpg");
+  background-image: url("/projects/ableton-about/assets/header.jpg");
   min-height: calc(100vh - 120px);
   margin-left: 8.33333vw;
   margin-right: 8.33333vw;
@@ -148,7 +148,7 @@ main {
 }
 
 .section-three__img1 {
-  background-image: url("http://127.0.0.1:5500/projects/ableton-about/assets/secondsectionimg1.jpg");
+  background-image: url("/projects/ableton-about/assets/secondsectionimg1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
@@ -160,7 +160,7 @@ main {
 }
 
 .section-three__img2 {
-  background-image: url("http://127.0.0.1:5500/projects/ableton-about/assets/secondsectionimg2.jpg");
+  background-image: url("/projects/ableton-about/assets/secondsectionimg2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
