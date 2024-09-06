@@ -361,12 +361,117 @@ main {
   fill: var(--ableton-blue);
 }
 
+.footer {
+  padding: 8.33333vw;
+}
+
 @media screen and (max-width: 1124px) {
   .company__presentation,
   .company__presentation p {
     width: 80vw;
     font-size: 0.875rem;
   }
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  gap: 4.16667vw;
+}
+
+.footer a {
+  display: flex;
+  gap: 2px;
+  align-items: center;
+}
+
+.footer--layer1 img {
+  width: 188px;
+  height: auto;
+}
+
+.footer--layer2 {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.625rem;
+}
+
+.footer--layer2__ableton-links {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.footer--layer2__ableton-links--ableton {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer--layer2__ableton-links--socials {
+  display: flex;
+  gap: 2px;
+}
+
+.footer--layer2__ableton-links--socials img {
+  width: 2rem;
+  height: auto;
+}
+
+.footer--layer2__ableton-links--socials--youtube-logo {
+  width: 2rem;
+  height: 1rem;
+}
+
+.footer--layer2__education,
+.footer--layer3__community {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.footer--layer2__signup-form {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.footer--layer3 {
+  display: flex;
+}
+
+.footer--layer3__language-location {
+  display: flex;
+  flex-direction: column;
+  flex: 2;
+}
+
+.footer--layer3__language-location--selects {
+  display: flex;
+  gap: 2px;
+}
+
+.footer--layer3__language-location--selects:first-child {
+  width: 500px;
+}
+
+.footer--layer4 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer--layer4__links {
+  display: flex;
+  gap: 16px;
+  font-size: 0.775rem;
+  font-weight: 500;
+}
+
+.footer--layer4__logo {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  font-size: 0.775rem;
+  font-weight: 500;
 }
 
 @media screen and (max-width: 1280px) {
