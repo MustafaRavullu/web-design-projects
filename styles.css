@@ -1,132 +1,103 @@
 body {
   display: flex;
-  padding: 2rem;
-  justify-content: start;
-  align-items: center;
-  flex-direction: column;
-  background-color: #fde047;
-}
-
-h1 {
-  font-size: 3rem;
-  line-height: 1;
-  font-weight: 700;
-  text-align: left;
-  color: black;
-  margin-bottom: 1rem;
-  transform: rotate(-2deg);
-}
-
-p {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-  color: black;
-  margin-bottom: 2rem;
-  background-color: #4ade80;
-  padding: 1rem;
-  border: 2px solid rgb(0, 0, 0);
-  max-width: 42rem;
-  transform: rotate(1deg);
-}
-
-.list-link {
-  display: block;
-  background-color: #f472b6;
-  color: black;
-  font-size: 1.5rem;
-  line-height: 2rem;
-  font-weight: 700;
-  padding: 1.5rem;
-  border: 4px solid black;
-  transition-property: all;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 300ms;
-}
-
-.list-link:hover {
-  background-color: #ec4899;
-  box-shadow: 8px 8px 0 0 rgba(0, 0, 0, 1);
-}
-
-ul {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1.5rem;
-}
-
-li {
-  transform: rotate(-1deg);
-}
-
-li:nth-child(odd) {
-  transform: rotate(1deg);
-}
-
-.source-code-link {
-  color: #2563eb;
-  display: inline-flex;
-  align-items: center;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-  transition-property: color, background-color, border-color,
-    text-decoration-color, fill, stroke;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-}
-
-.source-code-link:hover {
-  background-color: #2563eb;
-  color: white;
-}
-
-.source-code-link:hover .github-icon {
-  transform: rotate(12deg);
-  transition-property: transform;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-  fill: white;
-}
-
-.github-icon {
-  margin-left: 0.25rem;
-  width: 1.5rem;
-  height: 1.5rem;
-  fill: #2563eb;
-}
-
-main {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  max-width: 56rem;
+  justify-content: center;
+  align-items: start;
+  padding-top: 5rem;
+  max-width: 50vw;
   margin-left: auto;
   margin-right: auto;
-  background-color: white;
-  border: solid 4px rgb(0, 0, 0);
-  box-shadow: 8px 8px 0 0 rgba(0, 0, 0, 1);
-  padding: 2rem;
+  background-color: #fef2f2;
 }
 
-.html-text {
-  color: #9723c9;
-}
-
-.css-text {
-  color: #2563eb;
-}
-
-.js-text {
-  color: #ff4911;
-}
-
-.anton-regular {
-  font-family: "Anton", sans-serif;
+.pixelify-sans {
+  font-family: "Pixelify Sans", sans-serif;
+  font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
 }
 
+.description {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+.source-code-link {
+  margin-bottom: 1rem;
+  width: fit-content;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  border-left: 4px solid black;
+  position: relative;
+  padding-left: 0.5rem;
+}
+
+.source-code-link box-icon {
+  position: absolute;
+  transition-property: all;
+  transition-duration: 300ms;
+  left: -5rem;
+}
+
+.source-code-link:hover box-icon {
+  transition-property: all;
+  transition-duration: 300ms;
+  left: 0;
+}
+
+.source-code-link a {
+  transition-property: all;
+  transition-duration: 300ms;
+}
+
+.source-code-link:hover a {
+  transition-property: all;
+  transition-duration: 300ms;
+  padding-left: 1rem;
+}
+
+h2 {
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+
+ul li {
+  display: flex;
+  align-items: center;
+  position: relative;
+  border-left: solid 4px black;
+  padding-left: 0.5rem;
+  overflow: hidden;
+}
+
+ul li box-icon {
+  position: absolute;
+  left: -5rem;
+  transition-property: all;
+  transition-duration: 300ms;
+}
+
+ul li:hover box-icon {
+  transition-property: all;
+  transition-duration: 300ms;
+  left: 0;
+}
+
+ul li a {
+  transition-property: all;
+  transition-duration: 300ms;
+}
+
+ul li:hover a {
+  transition-property: all;
+  transition-duration: 300ms;
+  padding-left: 1rem;
+}
+
 @media screen and (max-width: 764px) {
-  ul {
-    grid-template-columns: 1fr;
+  body {
+    max-width: 100%;
+    padding: 1rem;
   }
 }
