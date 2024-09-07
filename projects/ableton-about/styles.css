@@ -377,6 +377,7 @@ main {
   display: flex;
   flex-direction: column;
   gap: 4.16667vw;
+  font-size: 1.1rem;
 }
 
 .footer a {
@@ -400,16 +401,19 @@ main {
   display: flex;
   flex-direction: column;
   flex: 1;
+  gap: 20px;
 }
 
 .footer--layer2__ableton-links--ableton {
   display: flex;
   flex-direction: column;
+  gap: 5px;
 }
 
 .footer--layer2__ableton-links--socials {
   display: flex;
-  gap: 2px;
+  align-items: center;
+  gap: 10px;
 }
 
 .footer--layer2__ableton-links--socials img {
@@ -427,12 +431,36 @@ main {
   display: flex;
   flex-direction: column;
   flex: 1;
+  gap: 5px;
 }
 
 .footer--layer2__signup-form {
   display: flex;
   flex-direction: column;
   flex: 1;
+  gap: 5px;
+}
+
+.footer--layer2__signup-form form {
+  margin-top: 15px;
+  width: 100%;
+  display: flex;
+}
+
+.footer--layer2__signup-form input {
+  border: none;
+  background-color: #eeeeee;
+  flex: 1;
+  padding: 0.5rem 1rem;
+}
+
+.footer--layer2__signup-form button {
+  background-color: var(--ableton-blue);
+  border: none;
+  color: white;
+  font-weight: bold;
+  padding: 0.5rem 2rem;
+  text-wrap: nowrap;
 }
 
 .footer--layer3 {
@@ -443,6 +471,7 @@ main {
   display: flex;
   flex-direction: column;
   flex: 2;
+  gap: 20px;
 }
 
 .footer--layer3__language-location--selects {
@@ -474,7 +503,53 @@ main {
   font-weight: 500;
 }
 
+.footer--layer3__language-location select {
+  background-color: #eeeeee;
+  border: none;
+  padding: 0.4rem 0.7rem;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.footer--layer3__language-location--selects select:first-child {
+  width: 120px;
+}
+
+.footer--layer3__language-location--selects select:last-child {
+  width: 200px;
+}
+
+@media screen and (max-width: 1024px) {
+  .footer--layer2__signup-form {
+    order: 1;
+  }
+
+  .footer--layer2__ableton-links {
+    order: 2;
+  }
+
+  .footer--layer2__education {
+    order: 3;
+  }
+
+  .footer--layer4__links {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .footer--layer2,
+  .footer--layer3,
+  .footer--layer4 {
+    flex-direction: column;
+    gap: 60px;
+  }
+}
+
 @media screen and (max-width: 1280px) {
+  .footer {
+    font-size: 0.775rem;
+  }
+
   .latest-job-section {
     flex-direction: column;
   }
