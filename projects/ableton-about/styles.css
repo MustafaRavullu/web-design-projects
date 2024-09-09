@@ -43,7 +43,7 @@ main {
 
 .header__nav-list {
   display: flex;
-  gap: 2.8rem;
+  gap: 2rem;
   width: 100%;
 }
 
