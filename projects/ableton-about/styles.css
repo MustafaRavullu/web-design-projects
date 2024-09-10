@@ -31,6 +31,12 @@ main {
 
 .header {
   display: flex;
+  flex-direction: column;
+}
+
+.header__mini-menu,
+.header__mega-menu {
+  display: flex;
   gap: 40px;
   padding: 20px 40px;
 }
@@ -78,8 +84,11 @@ main {
 
 .header__nav-button {
   color: var(--ableton-red);
+  background-color: transparent;
+  border: none;
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 
 .header__nav-button__icon {
@@ -519,6 +528,29 @@ main {
   width: 200px;
 }
 
+.header__mega-menu__nav__layer1 {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.header__mega-menu__nav__layer1 ul {
+  display: flex;
+  gap: 15px;
+}
+
+.header__mega-menu__nav__layer2 {
+  padding-top: 42px;
+  padding-bottom: 55px;
+  gap: 9px;
+}
+
+.header__mega-menu__nav__layer2 ul {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
 @media screen and (max-width: 1024px) {
   .footer--layer2__signup-form {
     order: 1;
@@ -573,7 +605,8 @@ main {
     font-size: 0.8rem;
   }
 
-  .header {
+  .header__mini-menu,
+  .header__mega-menu {
     padding: 20px 20px;
     gap: 20px;
   }

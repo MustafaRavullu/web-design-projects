@@ -10,52 +10,114 @@
   </head>
   <body>
     <header class="layout header">
-      <img
-        src="/projects/ableton-about/assets/ableton-logo.svg"
-        alt="Ableton Logo"
-        class="header__logo-image"
-      />
-      <nav class="header__nav">
-        <ul class="header__nav-list">
-          <li class="header__nav-item">
-            <a href="#" class="header__nav-link">Live</a>
-          </li>
-          <li class="header__nav-item">
-            <a href="#" class="header__nav-link">Push</a>
-          </li>
-          <li class="header__nav-item">
-            <a href="#" class="header__nav-link">Note</a>
-          </li>
-          <li class="header__nav-item">
-            <a href="#" class="header__nav-link">Link</a>
-          </li>
-          <li class="header__nav-item">
-            <a href="#" class="header__nav-link">Shop</a>
-          </li>
-          <li class="header__nav-item">
-            <a href="#" class="header__nav-link">Packs</a>
-          </li>
-          <li class="header__nav-item">
-            <a href="#" class="header__nav-link">Help</a>
-          </li>
-          <li class="header__nav-item">
-            <a href="#" class="header__nav-button"
-              ><span class="header__nav-button__text">More</span
-              ><box-icon class="header__nav-button__icon" name="plus"></box-icon
-            ></a>
-          </li>
-          <li class="header__nav-item">
-            <a href="#" class="header__nav-link header__nav-link__promo"
-              >Try Live 12 for free</a
-            >
-          </li>
-          <li class="header__nav-item">
-            <a href="#" class="header__nav-link header__nav-link__auth"
-              >Login or register</a
-            >
-          </li>
-        </ul>
-      </nav>
+      <div class="header__mini-menu">
+        <img
+          src="/projects/ableton-about/assets/ableton-logo.svg"
+          alt="Ableton Logo"
+          class="header__logo-image"
+        />
+        <nav class="header__nav">
+          <ul class="header__nav-list">
+            <li class="header__nav-item">
+              <a href="#" class="header__nav-link">Live</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#" class="header__nav-link">Push</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#" class="header__nav-link">Note</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#" class="header__nav-link">Link</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#" class="header__nav-link">Shop</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#" class="header__nav-link">Packs</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#" class="header__nav-link">Help</a>
+            </li>
+            <li class="header__nav-item">
+              <button id="headerNavButton" class="header__nav-button">
+                <span class="header__nav-button__text">More</span
+                ><box-icon
+                  class="header__nav-button__icon"
+                  name="plus"
+                ></box-icon>
+              </button>
+            </li>
+            <li class="header__nav-item">
+              <a href="#" class="header__nav-link header__nav-link__promo"
+                >Try Live 12 for free</a
+              >
+            </li>
+            <li class="header__nav-item">
+              <a href="#" class="header__nav-link header__nav-link__auth"
+                >Login or register</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header__mega-menu">
+        <nav class="header__mega-menu__nav">
+          <div class="header__mega-menu__nav__layer1">
+            <h2>More on Ableton.com:</h2>
+            <ul>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Ableton for the Classroom</a></li>
+              <li><a href="#">Ableton for Colleges and Universities</a></li>
+              <li><a href="#">Certified Training</a></li>
+              <li><a href="#">About Ableton</a></li>
+              <li><a href="#">Jobs</a></li>
+              <li><a href="#">Apprenticeships</a></li>
+            </ul>
+          </div>
+          <div class="header__mega-menu__nav__layer2">
+            <h2>More from Ableton:</h2>
+            <ul>
+              <li>
+                <a href="#">
+                  <h3>Loop</h3>
+                  <p>
+                    Watch Talks, Performances and Features from Ableton's Summit
+                    for Music Makers
+                  </p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <h3>Learning Music</h3>
+                  <p>
+                    Learn the fundamentals of music making right in your
+                    browser.
+                  </p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <h3>Learning Synths</h3>
+                  <p>
+                    Get started with synthesis using a web-based synth and
+                    accompanying lessons.
+                  </p>
+                </a>
+              </li>
+              <li>
+                <a href="#"
+                  ><h3>Making Music</h3>
+                  <p>
+                    Some tips from 74 Creative Strategies for Electronic
+                    Producers.
+                  </p></a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </header>
     <main class="layout">
       <header class="secondary-header">
@@ -248,82 +310,81 @@
               />
             </a>
             <a href="#" title="Go to Twitter">
-
               <img
-              src="/projects/ableton-about/assets/X_logo_2023.svg"
-              alt="twitter logo"
+                src="/projects/ableton-about/assets/X_logo_2023.svg"
+                alt="twitter logo"
               />
-            </a>
             </a>
             <a href="#" title="Go to Youtube">
-
               <img
-              src="/projects/ableton-about/assets/Youtube_logo.png"
-              alt="youtube logo"
-              class="footer--layer2__ableton-links--socials--youtube-logo"
+                src="/projects/ableton-about/assets/Youtube_logo.png"
+                alt="youtube logo"
+                class="footer--layer2__ableton-links--socials--youtube-logo"
               />
-            </a>
             </a>
             <a href="#" title="Go to Instagram">
-
               <img
-              src="/projects/ableton-about/assets/1_Instagram_colored_svg_1-512.webp"
-              alt="instagram logo"
+                src="/projects/ableton-about/assets/1_Instagram_colored_svg_1-512.webp"
+                alt="instagram logo"
               />
-            </a>
             </a>
             <a href="#" title="Go to Tiktok">
-
               <img
-              src="/projects/ableton-about/assets/tiktok-icon-453x512-858hjdxv.png"
-              alt="tiktok logo"
+                src="/projects/ableton-about/assets/tiktok-icon-453x512-858hjdxv.png"
+                alt="tiktok logo"
               />
-            </a>
             </a>
           </div>
         </div>
         <div class="footer--layer2__education">
           <h4>Education</h4>
+          <a href="#">
+            Offers for students and teachers
+            <box-icon name="chevron-right"></box-icon
+          ></a>
           <a href="#"
-              >
-              Offers for students and teachers <box-icon name="chevron-right"></box-icon
-            ></a>
-            <a href="#"
-              >Ableton for the Classroom <box-icon name="chevron-right"></box-icon
-            ></a>
-            <a href="#"
-              >Ableton for Colleges and Universities <box-icon name="chevron-right"></box-icon
-            ></a>
+            >Ableton for the Classroom <box-icon name="chevron-right"></box-icon
+          ></a>
+          <a href="#"
+            >Ableton for Colleges and Universities
+            <box-icon name="chevron-right"></box-icon
+          ></a>
         </div>
         <div class="footer--layer2__signup-form">
           <h4>Sign up to our newsletter</h4>
-          <p>Enter your email address to stay up to date with the latest offers, tutorials, downloads, surveys and more.</p>
+          <p>
+            Enter your email address to stay up to date with the latest offers,
+            tutorials, downloads, surveys and more.
+          </p>
           <form>
-            <input type="text" placeholder="Email Address">
+            <input type="text" placeholder="Email Address" />
             <button>Sign Up</button>
           </form>
         </div>
       </div>
       <div class="footer--layer3">
         <div class="footer--layer3__community">
-
           <h4>Community</h4>
+          <a href="#">
+            Find Ableton User Groups <box-icon name="chevron-right"></box-icon
+          ></a>
           <a href="#"
-          >
-          Find Ableton User Groups <box-icon name="chevron-right"></box-icon
-            ></a>
-            <a href="#"
             >Find Certified Training <box-icon name="chevron-right"></box-icon
-              ></a>
-              <a href="#"
-              >Become a Certified Traineres <box-icon name="chevron-right"></box-icon
-                ></a>
+          ></a>
+          <a href="#"
+            >Become a Certified Traineres
+            <box-icon name="chevron-right"></box-icon
+          ></a>
         </div>
         <div class="footer--layer3__language-location">
           <h4>Language and Location</h4>
           <div class="footer--layer3__language-location--selects">
-            <select name="" id=""><option value="english">English</option></select>
-            <select name="" id=""><option value="turkey">Turkey</option></select>
+            <select name="" id="">
+              <option value="english">English</option>
+            </select>
+            <select name="" id="">
+              <option value="turkey">Turkey</option>
+            </select>
           </div>
         </div>
       </div>
@@ -337,7 +398,11 @@
           <a href="#">Imprint</a>
         </div>
         <div class="footer--layer4__logo">
-          Made in Berlin <img src="/projects/ableton-about/assets/ableton-logo.svg" alt="ableton logo">
+          Made in Berlin
+          <img
+            src="/projects/ableton-about/assets/ableton-logo.svg"
+            alt="ableton logo"
+          />
         </div>
       </div>
     </footer>
