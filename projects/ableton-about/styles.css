@@ -578,6 +578,10 @@ main {
 }
 
 @media screen and (max-width: 1280px) {
+  .header__mega-menu {
+    font-size: 0.875rem;
+  }
+
   .footer {
     font-size: 0.775rem;
   }
