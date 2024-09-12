@@ -551,7 +551,23 @@ main {
   gap: 40px;
 }
 
+.header__mobil-menu {
+  display: none;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+}
+
 @media screen and (max-width: 1024px) {
+  .header__mobil-menu {
+    display: block;
+  }
+  .header__mega-menu,
+  .header__nav {
+    display: none;
+  }
+
   .footer--layer2__signup-form {
     order: 1;
   }
