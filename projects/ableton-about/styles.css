@@ -560,6 +560,9 @@ main {
 }
 
 @media screen and (max-width: 1024px) {
+  .latest-job-section__description {
+    font-size: 20px;
+  }
   .header__mobil-menu {
     display: block;
   }
