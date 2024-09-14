@@ -41,6 +41,10 @@ main {
   padding: 20px 40px;
 }
 
+.header__mega-menu {
+  display: none;
+}
+
 .header__nav {
   width: 100%;
   display: flex;
