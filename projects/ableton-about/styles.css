@@ -29,20 +29,24 @@ main {
   flex: 1;
 }
 
+.show-mega-menu {
+  display: flex !important;
+}
+
 .header {
   display: flex;
   flex-direction: column;
 }
 
-.header__mini-menu,
-.header__mega-menu {
+.header__mini-menu {
   display: flex;
   gap: 40px;
   padding: 20px 40px;
 }
-
 .header__mega-menu {
   display: none;
+  gap: 40px;
+  padding: 20px 40px;
 }
 
 .header__nav {
