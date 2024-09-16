@@ -33,6 +33,10 @@ main {
   display: flex !important;
 }
 
+.header__mega-menu__nav__layer1__active-link {
+  color: var(--ableton-red);
+}
+
 .header {
   display: flex;
   flex-direction: column;
