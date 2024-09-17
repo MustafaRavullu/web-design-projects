@@ -109,6 +109,13 @@ main {
   fill: var(--ableton-red);
 }
 
+.show {
+  display: block;
+}
+.hide {
+  display: none !important;
+}
+
 .secondary-header__nav-list {
   display: flex;
   gap: 20px;
