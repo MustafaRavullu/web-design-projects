@@ -576,6 +576,26 @@ main {
   border: none;
   cursor: pointer;
   font-weight: 500;
+  align-items: center;
+}
+
+.header__mobil-menu::after {
+  content: "";
+  -webkit-transform: scaleX(0.8);
+  -moz-transform: scaleX(0.8);
+  -ms-transform: scaleX(0.8);
+  -o-transform: scaleX(0.8);
+  transform: scaleX(0.8);
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-bottom: -3px;
+  margin-left: 0.4em;
+  margin-top: 4px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent;
+  border-top-color: #000;
 }
 
 @media screen and (max-width: 1024px) {
@@ -583,7 +603,7 @@ main {
     font-size: 20px;
   }
   .header__mobil-menu {
-    display: block;
+    display: flex;
   }
   .header__mega-menu,
   .header__nav {
